@@ -26,8 +26,11 @@
  * First of all, we need to be able to read the text again,
  * without the risk of catching an eye infection!
  */
-
-
+let p = document.getElementsByTagName("p");  // suche von jeden <p> Tags
+ for (let element of p) {                              // jedes element aus der liste p wird genommen
+element.style.color = "black";
+element.style.backgroundColor = "transparent";
+ }
 
 
 /**
@@ -35,8 +38,9 @@
  * Great job! So much easier on the eyes! Now, let's tackle those minions!
  * Can't we just remove them all together?
  */
-
-
+let heroes = document.getElementById("heroes_of_the_web");
+let minions = heroes.previousElementSibling;
+minions.remove();
 
 
 /**
@@ -44,7 +48,8 @@
  * Wow! You are so powerful! Quick now, set our heroes of the web free!
  * And while at it, let the world know again, that they are back in town!
  */
-
+heroes.style.visibility="visible"; // heroes sind wieder sichtbar
+heroes.previousElementSibling.textContent = "We are back like Frisbee :)"
 
 
 /**
@@ -52,7 +57,8 @@
  * Our Webpage is safe again! But Dr. Dom is still holding our Headline as a hostage!
  * Do your thing, savior!
  */
-
+let mainTitle = document.getElementById("title");   // h1 mit der ID title angreifen
+mainTitle.textContent = "We, the mighty Heroes of the web, will protect you!";  // den Text ändern
 
 
 /**
@@ -63,3 +69,5 @@
  * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
  * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
  */
+let messageElement = document.getElementById("message");  // den p tag angreifen
+messageElement.textContent = "We care for simplistic design!";                  // text ändern
