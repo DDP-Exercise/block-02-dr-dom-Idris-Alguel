@@ -15,6 +15,18 @@
  *******************************************************/
 
 //TODO: Place one object here.
+const SAVIOR = {
+    name: "Idris The GOAT",
+    age: 22,
+    location: "Soizbuag",
+    hobbies: ["playing Football, BJJ, E-Sports, camping"],
+    type_of_companion: "Wolf",
+    companion: {
+        name: "Goktug",
+        power: "Stunning the enemy with Screams and is really fast"
+    }
+
+};
 
 /*******************************************************
  *   DO NOT CHANGE THE CODE BELOW!
